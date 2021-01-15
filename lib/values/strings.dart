@@ -2,7 +2,9 @@ part of values;
 
 class StringConst {
   //strings
-  static const String APP_NAME = "Drop";
+  static const String APP_NAME = "Outfitr";
+  //SLOGAN
+  static const String APP_SLOGAN = "Find Your Style";
 
   //Verification Screen
   static const String VERIFICATION_CODE = "Verification Code";
@@ -166,5 +168,5 @@ class StringConst {
   static const String OR = "or";
 
   //Font Family
-  static const String FONT_FAMILY = "Try Clother";
+  static const String FONT_FAMILY = "SF Pro Display";
 }
