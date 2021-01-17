@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:outfitr/presentation/widgets/onboarding_item.dart';
 import 'package:outfitr/presentation/widgets/outfitr_item.dart';
 
 part 'colors.dart';

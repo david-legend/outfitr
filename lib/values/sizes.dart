@@ -25,6 +25,7 @@ class Sizes {
 
   //TextSizes
   static const double TEXT_SIZE_96 = 96.0;
+  static const double TEXT_SIZE_80 = 80.0;
   static const double TEXT_SIZE_60 = 60.0;
   static const double TEXT_SIZE_50 = 50.0;
   static const double TEXT_SIZE_48 = 48.0;
@@ -190,6 +191,7 @@ class Sizes {
   static const double RADIUS_40 = 40.0;
   static const double RADIUS_32 = 32.0;
   static const double RADIUS_30 = 30.0;
+  static const double RADIUS_28 = 28.0;
   static const double RADIUS_24 = 24.0;
   static const double RADIUS_22 = 22.0;
   static const double RADIUS_20 = 20.0;

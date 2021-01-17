@@ -78,4 +78,43 @@ class Data {
       borderRadius: AppRadius.fullCircleRadius,
     ),
   ];
+
+  static List<OnBoardingItemData> onBoardingItems = [
+    OnBoardingItemData(
+      title: StringConst.ONBOARDING_TITLE_1,
+      description: StringConst.ONBOARDING_DESC_1,
+      tag: StringConst.ONBOARDING_TAG_1,
+      coverImagePath: ImagePath.SEAN_OPRY_HM_LG,
+      buttonText: StringConst.NEXT,
+      backgroundColor: AppColors.accentOceanBlue200,
+    ),
+    OnBoardingItemData(
+      title: StringConst.ONBOARDING_TITLE_2,
+      description: StringConst.ONBOARDING_DESC_2,
+      tag: StringConst.ONBOARDING_TAG_2,
+      coverImagePath: ImagePath.PRIYANKA_CHOPRA,
+      buttonText: StringConst.NEXT,
+      backgroundColor: AppColors.accentGreen,
+      tagAlignment: TagAlignment.topRight,
+    ),
+    OnBoardingItemData(
+      title: StringConst.ONBOARDING_TITLE_3,
+      description: StringConst.ONBOARDING_DESC_3,
+      tag: StringConst.ONBOARDING_TAG_3,
+      coverImagePath: ImagePath.BILLIE_EILLISH,
+      buttonText: StringConst.NEXT,
+      backgroundColor: AppColors.accentLightPink100,
+    ),
+    OnBoardingItemData(
+      title: StringConst.ONBOARDING_TITLE_4,
+      description: StringConst.ONBOARDING_DESC_4,
+      tag: StringConst.ONBOARDING_TAG_4,
+      coverImagePath: ImagePath.AMANDLA_LG,
+      buttonText: StringConst.GET_STARTED,
+      buttonColor: AppColors.primaryColor,
+      buttonTextColor: AppColors.white,
+      backgroundColor: AppColors.accentLightPink200,
+      tagAlignment: TagAlignment.topRight,
+    ),
+  ];
 }

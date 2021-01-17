@@ -1,9 +1,31 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:outfitr/presentation/routes/router.gr.dart';
 import 'package:outfitr/presentation/widgets/outfitr_item.dart';
 import 'package:outfitr/presentation/widgets/spaces.dart';
 import 'package:outfitr/values/values.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
+  @override
+  _SplashScreenState createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    run();
+  }
+
+  void run() {
+    Future.delayed(Duration(milliseconds: 1500), () {
+      ExtendedNavigator.root.pushAndRemoveUntil(
+        Routes.onBoardingScreen,
+        (Route<dynamic> route) => false,
+      );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;

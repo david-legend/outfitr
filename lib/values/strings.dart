@@ -6,7 +6,30 @@ class StringConst {
   //SLOGAN
   static const String APP_SLOGAN = "Find Your Style";
 
-  //Verification Screen
+  //OnBoarding Screen
+  static const String ONBOARDING_TITLE_1 = "Find Your Outfits";
+  static const String ONBOARDING_DESC_1 =
+      "Confused about your outfits? Don't worry! Find the best outfit here!";
+  static const String ONBOARDING_TAG_1 = "Relaxed";
+
+  static const String ONBOARDING_TITLE_2 = "Hear it First, Wear it First";
+  static const String ONBOARDING_DESC_2 =
+      "Hating the clothes in your wardrobe? Explore hundreds of outfit ideas";
+  static const String ONBOARDING_TAG_2 = "Playful";
+
+  static const String ONBOARDING_TITLE_3 = "Your Style, Your Way";
+  static const String ONBOARDING_DESC_3 =
+      "Create your individual & unique style and look amazing everyday";
+  static const String ONBOARDING_TAG_3 = "Eccentric";
+
+  static const String ONBOARDING_TITLE_4 = "Look Good, Feel Good";
+  static const String ONBOARDING_DESC_4 =
+      "Discover the latest trends in fashion and explore your personality";
+  static const String ONBOARDING_TAG_4 = "Funky";
+
+  static const String NEXT = "Next";
+  static const String GET_STARTED = "Let's get started";
+
   static const String VERIFICATION_CODE = "Verification Code";
   static const String VERIFICATION_TEXT = "We texted you a code.";
   static const String ENTER_CODE = "Please enter it below.";
@@ -14,126 +37,6 @@ class StringConst {
       "This helps us verify every user in our market place.";
   static const String NO_CODE = "Didn't get code?";
   static const String CONFIRM = "Confirm";
-
-  //Interests Screen
-  static const String LOOKING_FOR = "What are you looking for ?";
-  static const String CHOOSE_INTEREST = "Choose Your Interests";
-  static const String DONE = "Done";
-  static const String SKIP = "Skip";
-  static const String FOOTWEAR = "Footwear";
-  static const String HOT_DROP = "Hot-drop";
-  static const String ART = "Art";
-  static const String TOYS = "Toys";
-  static const String OFF_WHITE = "Off-White";
-  static const String BALENCIAGA = "Balenciaga";
-  static const String SPORTS = "Sports";
-  static const String BEAUTY = "Beauty";
-  static const String FASHION = "Fashion";
-  static const String JEWELRY = "Jewelry";
-  static const String PRADA = "Prada";
-  static const String NIKE = "Nike";
-  static const String SUPREME = "Supreme";
-  static const String GUCCI = "Gucci";
-  static const String YEEZY = "Yeezy";
-  static const String ADIDAS = "Adidas";
-  static const String VANS = "Vans";
-  static const String SNEAKERS = "Sneakers";
-  static const String SHIRTS = "Shirts";
-
-  static const String AIR_VAPOR_MAX = "Nike Air VaporMax";
-  static const String AIR_VAPOR_MAX_TAG = "Fly Knit";
-  static const String AIR_MAX = "Nike Air Max";
-  static const String AIR_MAX_TAG = "Max 90";
-  static const String NIKE_TC = "Nike TC 7900";
-  static const String NIKE_TC_TAG = "TC 7900";
-
-  static const String AIR_BLUE = "Air-Blue";
-  static const String NIKE_BLUE = "Nike Air-Blue";
-
-  static const String AIR_GREEN = "Air-Green";
-  static const String NIKE_GREEN = "Nike Air-Green";
-  static const String TROUSERS = "Trousers";
-  static const String YSL_JACKET = "YSL Jacket";
-  static const String YSL_JACKET_TAG = "Winter Jacket";
-
-  //Home Screen
-  static const String HOME = "Home";
-  static const String CATEGORIES = "Categories";
-  static const String CHECK_OUT = "Check Out";
-  static const String NEW_ARRIVALS = "New Arrivals";
-  static const String TRENDING_NOW = "Trending Now";
-  static const String EXPLORE = "Explore";
-  static const String NEW_IN = "New in";
-  static const String SALE = "Sale";
-  static const String PROFILE = "Profile";
-  static const String SEE_ALL = "See all";
-  static const String SORT_BY = "Sort by";
-
-  //Profile Screen
-  static const String USERNAME_2 = "David Legend";
-  static const String USERNAME_EMAIL = "davidcobbina47@gmail.com";
-  static const String USER_LOCATION = "Ghana, Accra";
-  static const String EXIT = "Exit";
-  static const String ORDERS_AND_RETURNS = "Orders and returns";
-  static const String PERSONAL_DATA_PASSWORD = "Personal data and password";
-  static const String FAQ = "FAQ";
-  static const String CONTACT_US = "Contact us";
-
-  //Categories Screen
-  static const String TOP_DEALS = "Top Deals";
-  static const String LATEST = "Latest";
-
-  //Checkout Screen
-  static const String REMOVED = "removed";
-  static const String UNDO = "Undo";
-  static const String TOTAL = "Total";
-  static const String TOTAL_AMOUNT = "\$1475";
-
-  static const String YSL_SUEDE_DENIM = "YSL Suede Jacket";
-  static const String SUEDE_DENIM = "Suede Jacket Jacket";
-  static const String SUEDE_DENIM_TAG = "Suede Denim";
-  static const String BOMBER_JACKET = "Bomber Jacket";
-  static const String BOMBER_JACKET_TAG = "Bomber Jacket";
-  static const String GUCCI_JACKET = "Gucci Jacket";
-  static const String GUCCI_JACKET_TAG = "Gucci Jacket";
-  static const String GUCCI_SHIRT = "Gucci Jacket";
-  static const String GUCCI_TROUSERS = "Gucci Jacket";
-  static const String GUCCI_JEANS_SHIRT = "Jeans Shirt";
-  static const String SWAG = "Swagged Out";
-
-  static const String MERMAID_NECKLACE = "Mermaid";
-  static const String NECKLACE_1 = "Silver Necklace";
-  static const String NECKLACE_1_TAG = "Necklace";
-  static const String NECKLACE_2 = "Love Necklace";
-  static const String NECKLACE_2_TAG = "Necklace";
-  static const String NECKLACE_3 = "Banana Necklace";
-  static const String NECKLACE_3_TAG = "Necklace";
-
-  //Category Item Screen
-  static const String CURRENCY = "USD";
-
-  //Products Screen
-  static const String SIZES = "Sizes";
-  static const String SIZE_GUIDE = "Size guide";
-  static const String ADD_TO_CART = "Add to Cart";
-
-  //Registration / Login
-  static const String LOG_IN = "Log in";
-  static const String LOG_IN_2 = "Login";
-  static const String LOG_IN_WITH_GOOGLE = "Login with Google";
-  static const String LOG_IN_WITH_FACEBOOK = "Login with Facebook";
-  static const String SIGN_UP_WITH_GOOGLE = "Sign up with Google";
-  static const String SIGN_UP_WITH_FACEBOOK = "Sign up with Facebook";
-  static const String SIGN_UP = "Sign up";
-
-  //Filter BottomSheet
-  static const String FILTER = "Filters";
-  static const String PRICE = "Price";
-  static const String GENDER = "Gender";
-  static const String MEN = "Men";
-  static const String WOMEN = "Women";
-  static const String BRAND = "Brand";
-  static const String COLOR = "Color";
 
   //BRANDS
   static const String JORDAN = "Jordan";

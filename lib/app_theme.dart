@@ -123,7 +123,7 @@ class AppTheme {
       fontSize: Sizes.TEXT_SIZE_14,
       color: AppColors.primaryText,
       fontStyle: FontStyle.normal,
-      fontWeight: _regular,
+      fontWeight: _bold,
     ),
     caption: TextStyle(
       fontFamily: StringConst.FONT_FAMILY,

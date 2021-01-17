@@ -10,6 +10,7 @@ class ImagePath {
   static const String AMANDLA_SM = "$imageDir/amandla_sm.png";
   static const String BILLIE_SM = "$imageDir/billie_sm.png";
   static const String BILLIE_LG = "$imageDir/billie_lg.png";
+  static const String BILLIE_EILLISH = "$imageDir/billie_eillish_2.png";
   static const String BLUE_SUN_GLASSES = "$imageDir/blue_sun_glasses.png";
   static const String GUCCI_BAG = "$imageDir/gucci_bag.png";
   static const String STRAW_HAT = "$imageDir/straw_hat.png";
@@ -21,6 +22,7 @@ class ImagePath {
   static const String MARCEL_SLIDES = "$imageDir/marcel.png";
   static const String PRIYANKA_CHOPRA_SM = "$imageDir/priyanka_chopra_sm.png";
   static const String PRIYANKA_CHOPRA_2 = "$imageDir/priyanka_chopra_2.png";
+  static const String PRIYANKA_CHOPRA = "$imageDir/priyanka_chopra.png";
   static const String SEAN_OPRY_LG = "$imageDir/sean_o_pry.png";
   static const String SEAN_OPRY_SM = "$imageDir/sean_o_pry_sm.png";
   static const String SEAN_OPRY_HM_SM = "$imageDir/sean-opry-hm-sm.png";
