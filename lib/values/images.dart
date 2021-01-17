@@ -23,6 +23,7 @@ class ImagePath {
   static const String PRIYANKA_CHOPRA_SM = "$imageDir/priyanka_chopra_sm.png";
   static const String PRIYANKA_CHOPRA_2 = "$imageDir/priyanka_chopra_2.png";
   static const String PRIYANKA_CHOPRA = "$imageDir/priyanka_chopra.png";
+  static const String SEAN_OPRY = "$imageDir/sean_o_pry_2.png";
   static const String SEAN_OPRY_LG = "$imageDir/sean_o_pry.png";
   static const String SEAN_OPRY_SM = "$imageDir/sean_o_pry_sm.png";
   static const String SEAN_OPRY_HM_SM = "$imageDir/sean-opry-hm-sm.png";

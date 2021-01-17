@@ -30,6 +30,11 @@ class StringConst {
   static const String NEXT = "Next";
   static const String GET_STARTED = "Let's get started";
 
+  //GetStartedScreen
+  static const String GET_STARTED_DESC =
+      "Login into your account below or signup for an amazing experience";
+  static const String JOIN_US = "Join us, it's Free";
+
   static const String VERIFICATION_CODE = "Verification Code";
   static const String VERIFICATION_TEXT = "We texted you a code.";
   static const String ENTER_CODE = "Please enter it below.";
@@ -64,8 +69,10 @@ class StringConst {
 
   static const String FACEBOOK = "Facebook";
   static const String GOOGLE = "Google";
-  static const String FORGOT_PASSWORD = "Forgot Password?";
-  static const String ALREADY_HAVE_AN_ACCOUNT = "Already have an account? ";
+
+  static const String FORGOT_PASSWORD = "Forgot password?";
+  static const String LOGIN = "Login";
+  static const String HAVE_AN_ACCOUNT = "Have an account?";
   static const String DONT_HAVE_AN_ACCOUNT = "Don't have an account? ";
   static const String CREATE_ACCOUNT = "Create account";
   static const String OR = "or";

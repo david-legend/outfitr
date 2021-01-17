@@ -120,10 +120,10 @@ class AppTheme {
     ),
     button: TextStyle(
       fontFamily: StringConst.FONT_FAMILY,
-      fontSize: Sizes.TEXT_SIZE_14,
+      fontSize: Sizes.TEXT_SIZE_16,
       color: AppColors.primaryText,
       fontStyle: FontStyle.normal,
-      fontWeight: _bold,
+      fontWeight: _regular,
     ),
     caption: TextStyle(
       fontFamily: StringConst.FONT_FAMILY,

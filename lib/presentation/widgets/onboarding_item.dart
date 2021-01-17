@@ -116,7 +116,9 @@ class OnBoardingItem extends StatelessWidget {
                 child: Text(
                   tag,
                   style: theme.textTheme.headline1.copyWith(
-                      color: AppColors.white, fontSize: Sizes.TEXT_SIZE_80),
+                    color: AppColors.white,
+                    fontSize: Sizes.TEXT_SIZE_80,
+                  ),
                 ),
               ),
             ),
