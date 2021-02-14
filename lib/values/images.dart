@@ -31,4 +31,5 @@ class ImagePath {
   static const String SUPER_DRY_SLIDES = "$imageDir/super_dry_slides.png";
   static const String TRAVEL_BAG = "$imageDir/travel_bag.png";
   static const String YELLOW_JACKET = "$imageDir/yellow_jacket.png";
+  static const String BG_PATTERN = "$imageDir/bg_pattern.png";
 }

@@ -19,4 +19,15 @@ class Borders {
     width: Sizes.WIDTH_0,
     style: BorderStyle.none,
   );
+
+  static const InputBorder outfitrBorder = OutlineInputBorder(
+    borderSide: BorderSide(
+      color: AppColors.grey20,
+    ),
+  );
+  static const InputBorder outfitrFocusedBorder = OutlineInputBorder(
+    borderSide: BorderSide(
+      color: AppColors.primaryColor,
+    ),
+  );
 }

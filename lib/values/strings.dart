@@ -43,6 +43,14 @@ class StringConst {
   static const String NO_CODE = "Didn't get code?";
   static const String CONFIRM = "Confirm";
 
+  //Forgot Password Screen
+  static const String FORGOT_PASSWORD = "Forgot password?";
+  static const String RESET_PASSWORD = "Forgot password?";
+  static const String FORGOT_PASSWORD_DESC =
+      "Enter the email address associated with your account";
+  static const String DONT_WORK = "Don't work?";
+  static const String TRY_ANOTHER_WAY = "Try another way";
+
   //BRANDS
   static const String JORDAN = "Jordan";
   static const String KSWISS = "Kswiss";
@@ -70,7 +78,6 @@ class StringConst {
   static const String FACEBOOK = "Facebook";
   static const String GOOGLE = "Google";
 
-  static const String FORGOT_PASSWORD = "Forgot password?";
   static const String LOGIN = "Login";
   static const String HAVE_AN_ACCOUNT = "Have an account?";
   static const String DONT_HAVE_AN_ACCOUNT = "Don't have an account? ";

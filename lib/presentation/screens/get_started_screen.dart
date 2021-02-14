@@ -60,6 +60,7 @@ class GetStartedScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.only(
                       topLeft: const Radius.circular(Sizes.RADIUS_80),
+                      topRight: const Radius.circular(Sizes.RADIUS_80),
                     ),
                     color: AppColors.white,
                   ),
