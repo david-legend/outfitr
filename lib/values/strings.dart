@@ -43,6 +43,17 @@ class StringConst {
   static const String NO_CODE = "Didn't get code?";
   static const String CONFIRM = "Confirm";
 
+  //Login screen
+  static const String WELCOME_BACK = "Welcome back";
+  static const String LOG_IN = "Log into your account ";
+  static const String WELCOME_BACK_DESC =
+      "Use your credentials below and login to your account";
+
+  //Create account screen
+  static const String CREATE_ACCOUNT = "Create account";
+  static const String CREATE_ACCOUNT_DESC =
+      "Let us know your name, email and password";
+
   //Forgot Password Screen
   static const String FORGOT_PASSWORD = "Forgot password?";
   static const String RESET_PASSWORD = "Forgot password?";
@@ -81,7 +92,6 @@ class StringConst {
   static const String LOGIN = "Login";
   static const String HAVE_AN_ACCOUNT = "Have an account?";
   static const String DONT_HAVE_AN_ACCOUNT = "Don't have an account? ";
-  static const String CREATE_ACCOUNT = "Create account";
   static const String OR = "or";
 
   //Font Family

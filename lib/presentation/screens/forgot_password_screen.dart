@@ -10,6 +10,7 @@ class ForgotPasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
+
     double widthOfScreen = assignWidth(context: context, fraction: 1.0);
     double heightOfScreen = assignHeight(context: context, fraction: 1.0);
     return Scaffold(
@@ -46,15 +47,25 @@ class ForgotPasswordScreen extends StatelessWidget {
                         style: theme.textTheme.headline5,
                       ),
                       SpaceH16(),
-                      Text(
-                        StringConst.FORGOT_PASSWORD_DESC,
-                        textAlign: TextAlign.center,
-                        style: theme.textTheme.bodyText1.copyWith(
-                          color: AppColors.grey20,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: Sizes.PADDING_16,
+                        ),
+                        child: Text(
+                          StringConst.FORGOT_PASSWORD_DESC,
+                          textAlign: TextAlign.center,
+                          style: theme.textTheme.bodyText1.copyWith(
+                            color: AppColors.grey20,
+                            fontSize: Sizes.TEXT_SIZE_18,
+                          ),
                         ),
                       ),
                       SpaceH48(),
-                      OutfitrInputTextField(),
+                      OutfitrInputTextField(
+                        hintText: StringConst.PASSWORD_HINT_TEXT,
+                        style: Styles.outfitrTextFieldStyle,
+                        hintStyle: Styles.outfitrTextFieldHintStyle,
+                      ),
                       SpaceH48(),
                       Container(
                         width: widthOfScreen * 0.75,

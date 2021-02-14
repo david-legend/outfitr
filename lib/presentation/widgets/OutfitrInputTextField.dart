@@ -11,6 +11,9 @@ class OutfitrInputTextField extends StatelessWidget {
     this.border = Borders.outfitrBorder,
     this.enabledBorder = Borders.outfitrBorder,
     this.focusedBorder = Borders.outfitrFocusedBorder,
+    this.hintText = "",
+    this.hintStyle,
+    this.style,
   });
 
   final TextInputType keyboardType;
@@ -20,12 +23,18 @@ class OutfitrInputTextField extends StatelessWidget {
   final InputBorder border;
   final InputBorder enabledBorder;
   final InputBorder focusedBorder;
+  final TextStyle style;
+  final TextStyle hintStyle;
+  final String hintText;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       keyboardType: keyboardType,
+      style: style,
       decoration: InputDecoration(
+        hintText: hintText,
+        hintStyle: hintStyle,
         prefixIcon: prefixIcon ??
             Icon(
               defaultPrefixIcon,

@@ -28,4 +28,20 @@ class Styles {
       fontStyle: fontStyle,
     );
   }
+
+  static TextStyle outfitrTextFieldHintStyle = TextStyle(
+    fontFamily: StringConst.FONT_FAMILY,
+    fontSize: Sizes.TEXT_SIZE_16,
+    color: AppColors.grey20,
+    fontWeight: FontWeight.w400,
+    fontStyle: FontStyle.normal,
+  );
+
+  static TextStyle outfitrTextFieldStyle = TextStyle(
+    fontFamily: StringConst.FONT_FAMILY,
+    fontSize: Sizes.TEXT_SIZE_16,
+    color: AppColors.black,
+    fontWeight: FontWeight.w400,
+    fontStyle: FontStyle.normal,
+  );
 }
