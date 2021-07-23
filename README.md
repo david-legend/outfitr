@@ -1,16 +1,24 @@
-# outfitr
+# Outfitr
 
-A new Flutter application.
+<h1 align="center">
+  <a href="https://davidcobbina.com/" target="_blank">https://davidcobbina.com/</a>
+</h1>
 
-## Getting Started
+<p align="center">
+    Design your fashion app faster and easier with Outfitr Fashion UI Kit. Built with <strong>flutter</strong>.
+</p>
+<p align="center">
+    With over 30 unique screens, Outfitr UI Kit is a valuable resource for any developer or enterpreneur that wants to standout from the crowd
+</p>
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+<br/><br/>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Screenshot](assets/screenshots/outfitr_1.jpg)
+![Screenshot](assets/screenshots/outfitr_2.jpg)
+![Screenshot](assets/screenshots/outfitr_3.jpg)
+![Screenshot](assets/screenshots/outfitr_4.jpg)
+![Screenshot](assets/screenshots/outfitr_5.jpg)
+![Screenshot](assets/screenshots/outfitr_6.jpg)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
