@@ -10,6 +10,7 @@ class GetStartedScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
+
     double heightOfScreen = assignHeight(context: context, fraction: 1.0);
     double widthOfScreen = assignWidth(context: context, fraction: 1.0);
     return Scaffold(
@@ -35,7 +36,7 @@ class GetStartedScreen extends StatelessWidget {
                       child: Text(
                         StringConst.APP_NAME,
                         maxLines: 1,
-                        style: theme.textTheme.headline1.copyWith(
+                        style: theme.textTheme.headline1?.copyWith(
                           color: AppColors.white,
                           fontSize: Sizes.TEXT_SIZE_250,
                         ),
@@ -52,90 +53,102 @@ class GetStartedScreen extends StatelessWidget {
             ),
             Positioned(
               bottom: 0,
-              child: Container(
-                color: AppColors.accentLightBrown10,
-                child: Container(
-                  height: (heightOfScreen * 0.45),
-                  width: widthOfScreen,
-                  decoration: BoxDecoration(
-                    borderRadius: const BorderRadius.only(
-                      topLeft: const Radius.circular(Sizes.RADIUS_80),
-                      topRight: const Radius.circular(Sizes.RADIUS_80),
+              child: Stack(
+                children: [
+                  Positioned(
+                    child: Container(
+                      color: AppColors.accentLightBrown10,
+                      width: widthOfScreen * 0.5,
+                      height: heightOfScreen * 0.45,
                     ),
-                    color: AppColors.white,
                   ),
-                  child: Column(
-                    children: [
-                      Spacer(),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: Sizes.PADDING_24,
-                        ),
-                        child: Text(
-                          StringConst.GET_STARTED,
-                          textAlign: TextAlign.center,
-                          style: theme.textTheme.headline5,
-                        ),
-                      ),
-                      SpaceH16(),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: Sizes.PADDING_24,
-                        ),
-                        child: Text(
-                          StringConst.GET_STARTED_DESC,
-                          textAlign: TextAlign.center,
-                          style: theme.textTheme.bodyText1.copyWith(
-                            color: AppColors.primarySubtitleText,
+                  Positioned(
+                    child: Container(
+                      child: Container(
+                        height: (heightOfScreen * 0.45),
+                        width: widthOfScreen,
+                        decoration: BoxDecoration(
+                          borderRadius: const BorderRadius.only(
+                            topLeft: const Radius.circular(Sizes.RADIUS_80),
+                            topRight: const Radius.circular(Sizes.RADIUS_80),
                           ),
+                          color: AppColors.white,
+                        ),
+                        child: Column(
+                          children: [
+                            Spacer(),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: Sizes.PADDING_24,
+                              ),
+                              child: Text(
+                                StringConst.GET_STARTED,
+                                textAlign: TextAlign.center,
+                                style: theme.textTheme.headline5,
+                              ),
+                            ),
+                            SpaceH16(),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: Sizes.PADDING_24,
+                              ),
+                              child: Text(
+                                StringConst.GET_STARTED_DESC,
+                                textAlign: TextAlign.center,
+                                style: theme.textTheme.bodyText1?.copyWith(
+                                  color: AppColors.primarySubtitleText,
+                                ),
+                              ),
+                            ),
+                            SpaceH40(),
+                            Container(
+                              width: widthOfScreen * 0.75,
+                              child: CustomButton(
+                                title:
+                                    "${StringConst.HAVE_AN_ACCOUNT} ${StringConst.LOGIN}",
+                                textStyle: theme.textTheme.button?.copyWith(
+                                  color: AppColors.white,
+                                ),
+                                color: AppColors.primaryColor,
+                                elevation: Sizes.ELEVATION_0,
+                                onPressed: () => context.router
+                                    .push(const LoginScreenRoute()),
+                              ),
+                            ),
+                            SpaceH20(),
+                            Container(
+                              width: widthOfScreen * 0.75,
+                              child: CustomButton(
+                                title: StringConst.JOIN_US,
+                                textStyle: theme.textTheme.button?.copyWith(
+                                  color: AppColors.primaryText,
+                                ),
+                                color: AppColors.grey10,
+                                elevation: Sizes.ELEVATION_0,
+                                onPressed: () => context.router
+                                    .push(const SignUpScreenRoute()),
+                              ),
+                            ),
+                            Spacer(),
+                            InkWell(
+                              onTap: () => context.router
+                                  .push(const ForgotPasswordScreenRoute()),
+                              child: Padding(
+                                padding: const EdgeInsets.all(Sizes.PADDING_8),
+                                child: Text(
+                                  StringConst.FORGOT_PASSWORD,
+                                  textAlign: TextAlign.center,
+                                  style: theme.textTheme.subtitle1,
+                                ),
+                              ),
+                            ),
+                            Spacer(),
+                          ],
                         ),
                       ),
-                      SpaceH40(),
-                      Container(
-                        width: widthOfScreen * 0.75,
-                        child: CustomButton(
-                          title:
-                              "${StringConst.HAVE_AN_ACCOUNT} ${StringConst.LOGIN}",
-                          textStyle: theme.textTheme.button.copyWith(
-                            color: AppColors.white,
-                          ),
-                          color: AppColors.primaryColor,
-                          elevation: Sizes.ELEVATION_0,
-                          onPressed: () =>
-                              ExtendedNavigator.root.push(Routes.loginScreen),
-                        ),
-                      ),
-                      SpaceH20(),
-                      Container(
-                        width: widthOfScreen * 0.75,
-                        child: CustomButton(
-                          title: StringConst.JOIN_US,
-                          textStyle: theme.textTheme.button.copyWith(
-                            color: AppColors.primaryText,
-                          ),
-                          color: AppColors.grey10,
-                          elevation: Sizes.ELEVATION_0,
-                          onPressed: () =>
-                              ExtendedNavigator.root.push(Routes.signUpScreen),
-                        ),
-                      ),
-                      Spacer(),
-                      InkWell(
-                        onTap: () => ExtendedNavigator.root
-                            .push(Routes.forgotPasswordScreen),
-                        child: Padding(
-                          padding: const EdgeInsets.all(Sizes.PADDING_8),
-                          child: Text(
-                            StringConst.FORGOT_PASSWORD,
-                            textAlign: TextAlign.center,
-                            style: theme.textTheme.subtitle1,
-                          ),
-                        ),
-                      ),
-                      Spacer(),
-                    ],
-                  ),
-                ),
+                    ),
+                  )
+                ],
               ),
             ),
           ],

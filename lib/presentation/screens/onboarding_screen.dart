@@ -13,8 +13,8 @@ class OnBoardingScreen extends StatefulWidget {
 
 class _OnBoardingScreenState extends State<OnBoardingScreen> {
   PageController _pageController = PageController();
-  double _currentIndexPage;
-  int _pageLength;
+  late double _currentIndexPage;
+  late int _pageLength;
 
   @override
   void initState() {
@@ -117,6 +117,6 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
   }
 
   void navigateToGetStartedScreen() {
-    ExtendedNavigator.root.push(Routes.getStartedScreen);
+    context.router.push(const GetStartedScreenRoute());
   }
 }

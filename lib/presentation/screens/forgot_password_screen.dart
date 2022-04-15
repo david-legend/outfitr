@@ -54,7 +54,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                         child: Text(
                           StringConst.FORGOT_PASSWORD_DESC,
                           textAlign: TextAlign.center,
-                          style: theme.textTheme.bodyText1.copyWith(
+                          style: theme.textTheme.bodyText1?.copyWith(
                             color: AppColors.grey20,
                             fontSize: Sizes.TEXT_SIZE_18,
                           ),
@@ -71,7 +71,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                         width: widthOfScreen * 0.75,
                         child: CustomButton(
                           title: StringConst.RESET_PASSWORD,
-                          textStyle: theme.textTheme.button.copyWith(
+                          textStyle: theme.textTheme.button?.copyWith(
                             color: AppColors.white,
                           ),
                           color: AppColors.primaryColor,
@@ -87,7 +87,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                           children: [
                             TextSpan(
                               text: StringConst.TRY_ANOTHER_WAY,
-                              style: theme.textTheme.subtitle1.copyWith(
+                              style: theme.textTheme.subtitle1?.copyWith(
                                 color: AppColors.primaryColor,
                               ),
                             )

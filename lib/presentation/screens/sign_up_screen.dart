@@ -63,7 +63,7 @@ class SignUpScreen extends StatelessWidget {
                             child: Text(
                               StringConst.CREATE_ACCOUNT_DESC,
                               textAlign: TextAlign.center,
-                              style: theme.textTheme.bodyText1.copyWith(
+                              style: theme.textTheme.bodyText1?.copyWith(
                                 color: AppColors.grey20,
                                 fontSize: Sizes.TEXT_SIZE_18,
                               ),
@@ -94,7 +94,7 @@ class SignUpScreen extends StatelessWidget {
                             width: widthOfScreen * 0.75,
                             child: CustomButton(
                               title: StringConst.RESET_PASSWORD,
-                              textStyle: theme.textTheme.button.copyWith(
+                              textStyle: theme.textTheme.button?.copyWith(
                                 color: AppColors.white,
                               ),
                               color: AppColors.primaryColor,

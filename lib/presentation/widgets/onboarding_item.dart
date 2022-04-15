@@ -7,14 +7,14 @@ import 'custom_button.dart';
 
 class OnBoardingItemData {
   OnBoardingItemData({
-    this.title,
-    this.description,
-    this.buttonText,
-    this.tag,
-    this.coverImagePath,
+    required this.title,
+    required this.description,
+    required this.buttonText,
+    required this.tag,
+    required this.coverImagePath,
     this.buttonColor = AppColors.grey10,
-    this.backgroundColor,
-    this.buttonTextColor,
+    required this.backgroundColor,
+    this.buttonTextColor = AppColors.primaryText,
     this.tagAlignment = TagAlignment.topLeft,
     this.onPressed,
   });
@@ -28,24 +28,24 @@ class OnBoardingItemData {
   final Color backgroundColor;
   final Color buttonTextColor;
   final TagAlignment tagAlignment;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
 }
 
 enum TagAlignment { topLeft, topRight }
 
 class OnBoardingItem extends StatelessWidget {
   OnBoardingItem({
-    this.title,
-    this.description,
-    this.buttonText,
-    this.tag,
-    this.coverImagePath,
+    required this.title,
+    required this.description,
+    required this.buttonText,
+    required this.backgroundColor,
+    required this.tag,
+    required this.coverImagePath,
     this.titleStyle,
     this.tagTextStyle,
     this.buttonTextStyle,
     this.descriptionStyle,
     this.buttonColor = AppColors.grey10,
-    this.backgroundColor,
     this.buttonTextColor = AppColors.primaryText,
     this.tagAlignment = TagAlignment.topLeft,
     this.imageBorderRadius = const BorderRadius.only(
@@ -54,7 +54,10 @@ class OnBoardingItem extends StatelessWidget {
     this.containerBorderRadius = const BorderRadius.only(
       topLeft: const Radius.circular(Sizes.RADIUS_80),
     ),
-    this.onPressed,
+    this.borderRadius = const BorderRadius.only(
+      topLeft: const Radius.circular(Sizes.RADIUS_80),
+    ),
+    required this.onPressed,
   });
 
   final String title;
@@ -62,14 +65,15 @@ class OnBoardingItem extends StatelessWidget {
   final String buttonText;
   final String tag;
   final String coverImagePath;
-  final TextStyle titleStyle;
-  final TextStyle descriptionStyle;
-  final TextStyle buttonTextStyle;
-  final TextStyle tagTextStyle;
+  final TextStyle? titleStyle;
+  final TextStyle? descriptionStyle;
+  final TextStyle? buttonTextStyle;
+  final TextStyle? tagTextStyle;
   final Color buttonColor;
   final Color backgroundColor;
   final Color buttonTextColor;
   final BorderRadiusGeometry imageBorderRadius;
+  final BorderRadius borderRadius;
   final BorderRadiusGeometry containerBorderRadius;
   final TagAlignment tagAlignment;
   final VoidCallback onPressed;
@@ -89,7 +93,7 @@ class OnBoardingItem extends StatelessWidget {
               borderRadius: imageBorderRadius,
             ),
             child: ClipRRect(
-              borderRadius: imageBorderRadius,
+              borderRadius: borderRadius,
               child: Image.asset(
                 coverImagePath,
                 width: widthOfScreen,
@@ -115,7 +119,7 @@ class OnBoardingItem extends StatelessWidget {
                 quarterTurns: 1,
                 child: Text(
                   tag,
-                  style: theme.textTheme.headline1.copyWith(
+                  style: theme.textTheme.headline1?.copyWith(
                     color: AppColors.white,
                     fontSize: Sizes.TEXT_SIZE_80,
                   ),
@@ -155,7 +159,7 @@ class OnBoardingItem extends StatelessWidget {
                       child: Text(
                         description,
                         textAlign: TextAlign.center,
-                        style: theme.textTheme.bodyText1.copyWith(
+                        style: theme.textTheme.bodyText1?.copyWith(
                           color: AppColors.primarySubtitleText,
                         ),
                       ),
@@ -166,7 +170,7 @@ class OnBoardingItem extends StatelessWidget {
                       child: CustomButton(
                         title: buttonText,
                         textStyle: buttonTextStyle ??
-                            theme.textTheme.button.copyWith(
+                            theme.textTheme.button?.copyWith(
                               color: buttonTextColor,
                             ),
                         color: buttonColor,

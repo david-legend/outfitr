@@ -8,7 +8,7 @@ const double kItemSpacing = Sizes.SIZE_16;
 
 class OutfitrItemData {
   OutfitrItemData({
-    @required this.imagePath,
+    required this.imagePath,
     this.width,
     this.height,
     this.backgroundColor,
@@ -16,26 +16,26 @@ class OutfitrItemData {
   });
 
   final String imagePath;
-  final double width;
-  final double height;
-  final Color backgroundColor;
-  final BorderRadiusGeometry borderRadius;
+  final double? width;
+  final double? height;
+  final Color? backgroundColor;
+  final BorderRadius? borderRadius;
 }
 
 class OutfitrItem extends StatelessWidget {
   OutfitrItem({
-    @required this.imagePath,
+    required this.imagePath,
     this.width,
     this.height,
-    this.backgroundColor,
+    this.backgroundColor = AppColors.accentOceanBlue200,
     this.borderRadius = AppRadius.fullCircleRadius,
   });
 
   final String imagePath;
-  final double width;
-  final double height;
-  final Color backgroundColor;
-  final BorderRadiusGeometry borderRadius;
+  final double? width;
+  final double? height;
+  final Color? backgroundColor;
+  final BorderRadius? borderRadius;
 
   @override
   Widget build(BuildContext context) {
@@ -49,34 +49,6 @@ class OutfitrItem extends StatelessWidget {
                 subs: (totalSpacing + totalHorizontalPadding)) /
             3;
 
-//    return Stack(
-//      children: [
-//        Container(
-//          width: itemSize,
-//          height: itemSize,
-//          decoration: BoxDecoration(
-//            color: backgroundColor,
-//            borderRadius: borderRadius,
-//          ),
-//        ),
-//        Positioned(
-//          bottom: 0,
-//          top: 8,
-////          left: 8,
-////          right: 8,
-//          child: ClipRRect(
-//            borderRadius: borderRadius,
-//            child: Image.asset(
-//              imagePath,
-//              width: itemSize,
-//              height: itemSize,
-////          scale: 2,
-////          fit: BoxFit.cover,
-//            ),
-//          ),
-//        ),
-//      ],
-//    );
     return Container(
       width: itemSize,
       height: itemSize,

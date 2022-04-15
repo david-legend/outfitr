@@ -1,4 +1,4 @@
-import 'package:auto_route/auto_route_annotations.dart';
+import 'package:auto_route/annotations.dart';
 import 'package:outfitr/presentation/screens/forgot_password_screen.dart';
 import 'package:outfitr/presentation/screens/get_started_screen.dart';
 import 'package:outfitr/presentation/screens/login_screen.dart';

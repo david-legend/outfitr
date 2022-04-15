@@ -63,7 +63,7 @@ class LoginScreen extends StatelessWidget {
                             child: Text(
                               StringConst.WELCOME_BACK_DESC,
                               textAlign: TextAlign.center,
-                              style: theme.textTheme.bodyText1.copyWith(
+                              style: theme.textTheme.bodyText1?.copyWith(
                                 color: AppColors.grey20,
                                 fontSize: Sizes.TEXT_SIZE_18,
                               ),
@@ -87,7 +87,7 @@ class LoginScreen extends StatelessWidget {
                             width: widthOfScreen * 0.75,
                             child: CustomButton(
                               title: StringConst.LOG_IN,
-                              textStyle: theme.textTheme.button.copyWith(
+                              textStyle: theme.textTheme.button?.copyWith(
                                 color: AppColors.white,
                               ),
                               color: AppColors.primaryColor,

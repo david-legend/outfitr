@@ -1,33 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:outfitr/presentation/widgets/empty.dart';
 import 'package:outfitr/presentation/widgets/spaces.dart';
 import 'package:outfitr/values/values.dart';
 
 class CustomButton extends StatelessWidget {
   CustomButton({
-    this.title,
-    this.onPressed,
+    required this.title,
+    required this.onPressed,
     this.height = Sizes.HEIGHT_56,
     this.elevation = Sizes.ELEVATION_1,
     this.borderRadius = Sizes.RADIUS_28,
     this.color = AppColors.accentPrimaryColor,
     this.borderSide = Borders.defaultPrimaryBorder,
     this.textStyle,
-    this.icon,
+    this.icon = const Empty(),
     this.borderRadiusGeometry,
     this.hasIcon = false,
+    this.hasTitle = true,
   });
 
   final VoidCallback onPressed;
   final double height;
   final double elevation;
   final double borderRadius;
-  final BorderRadiusGeometry borderRadiusGeometry;
+  final BorderRadiusGeometry? borderRadiusGeometry;
   final String title;
   final Color color;
   final BorderSide borderSide;
-  final TextStyle textStyle;
+  final TextStyle? textStyle;
   final Widget icon;
   final bool hasIcon;
+  final bool hasTitle;
 
   @override
   Widget build(BuildContext context) {
@@ -46,15 +49,12 @@ class CustomButton extends StatelessWidget {
         children: <Widget>[
           hasIcon ? icon : Container(),
           hasIcon ? SpaceW8() : Container(),
-          title != null
+          hasTitle
               ? Text(
                   title,
                   style: textStyle,
                 )
-              : Container(
-                  width: 0,
-                  height: 0,
-                ),
+              : const Empty(),
         ],
       ),
     );

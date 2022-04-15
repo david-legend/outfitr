@@ -19,10 +19,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void run() {
     Future.delayed(Duration(milliseconds: 1500), () {
-      ExtendedNavigator.root.pushAndRemoveUntil(
-        Routes.onBoardingScreen,
-        (Route<dynamic> route) => false,
-      );
+      context.router.pushAndPopUntil(const OnBoardingScreenRoute(),
+          predicate: (Route<dynamic> route) => false);
     });
   }
 
@@ -52,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   children: [
                     TextSpan(
                       text: ".",
-                      style: textTheme.headline2.copyWith(
+                      style: textTheme.headline2?.copyWith(
                         color: AppColors.primaryColor,
                       ),
                     ),
@@ -62,7 +60,7 @@ class _SplashScreenState extends State<SplashScreen> {
               SpaceH8(),
               Text(
                 StringConst.APP_SLOGAN.toUpperCase(),
-                style: textTheme.subtitle2.copyWith(
+                style: textTheme.subtitle2?.copyWith(
                   color: AppColors.grey,
                 ),
               ),
