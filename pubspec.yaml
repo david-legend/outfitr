@@ -29,6 +29,7 @@ dependencies:
   flutter_feather_icons: ^2.0.0+1
   font_awesome_flutter: ^10.1.0
   dots_indicator: ^2.1.0
+  flextras: ^0.0.2
 
 
   # The following adds the Cupertino Icons font to your application.

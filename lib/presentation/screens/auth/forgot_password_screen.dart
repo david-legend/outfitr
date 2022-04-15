@@ -62,7 +62,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                       ),
                       SpaceH48(),
                       OutfitrInputTextField(
-                        hintText: StringConst.PASSWORD_HINT_TEXT,
+                        hintText: StringConst.EMAIL_HINT_TEXT,
                         style: Styles.outfitrTextFieldStyle,
                         hintStyle: Styles.outfitrTextFieldHintStyle,
                       ),

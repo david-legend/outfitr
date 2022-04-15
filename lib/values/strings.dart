@@ -46,6 +46,7 @@ class StringConst {
   //Login screen
   static const String WELCOME_BACK = "Welcome back";
   static const String LOG_IN = "Log into your account ";
+  static const String SIGN_UP_HERE = "Sign Up here";
   static const String WELCOME_BACK_DESC =
       "Use your credentials below and login to your account";
 
@@ -53,13 +54,15 @@ class StringConst {
   static const String CREATE_ACCOUNT = "Create account";
   static const String CREATE_ACCOUNT_DESC =
       "Let us know your name, email and password";
+  static const String ALREADY_HAVE_ACCOUNT = "Already have an account? ";
+  static const String LOGIN_HERE = "Login here";
 
   //Forgot Password Screen
   static const String FORGOT_PASSWORD = "Forgot password?";
-  static const String RESET_PASSWORD = "Forgot password?";
+  static const String RESET_PASSWORD = "Reset password";
   static const String FORGOT_PASSWORD_DESC =
       "Enter the email address associated with your account";
-  static const String DONT_WORK = "Don't work?";
+  static const String DONT_WORK = "Didn't work?";
   static const String TRY_ANOTHER_WAY = "Try another way";
 
   //BRANDS
@@ -79,7 +82,8 @@ class StringConst {
   static const String EMAIL_2 = "E-mail";
 
   static const String FULL_NAME_HINT_TEXT = "Eleanor Pena";
-  static const String PASSWORD_HINT_TEXT = "********";
+  static const String PASSWORD_HINT_TEXT = "Enter your password";
+  static const String CONFIRM_PASSWORD_HINT_TEXT = "Confirm password";
   static const String EMAIL_HINT_TEXT = "example@gmail.com";
   static const String SEARCH_HINT_TEXT = "Search for countries, places etc";
   static const String SEARCH_HINT_TEXT_2 = "Search for friends";
@@ -88,9 +92,10 @@ class StringConst {
 
   static const String FACEBOOK = "Facebook";
   static const String GOOGLE = "Google";
+  static const String APPLE = "Apple";
 
   static const String LOGIN = "Login";
-  static const String HAVE_AN_ACCOUNT = "Have an account?";
+  static const String HAVE_AN_ACCOUNT = "Have an account? ";
   static const String DONT_HAVE_AN_ACCOUNT = "Don't have an account? ";
   static const String OR = "or";
 

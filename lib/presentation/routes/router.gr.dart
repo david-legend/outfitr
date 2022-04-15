@@ -13,11 +13,11 @@
 import 'package:auto_route/auto_route.dart' as _i7;
 import 'package:flutter/material.dart' as _i8;
 
-import '../screens/forgot_password_screen.dart' as _i6;
-import '../screens/get_started_screen.dart' as _i3;
-import '../screens/login_screen.dart' as _i4;
-import '../screens/onboarding_screen.dart' as _i2;
-import '../screens/sign_up_screen.dart' as _i5;
+import '../screens/auth/forgot_password_screen.dart' as _i6;
+import '../screens/onboarding/get_started_screen.dart' as _i3;
+import '../screens/auth/login_screen.dart' as _i4;
+import '../screens/onboarding/onboarding_screen.dart' as _i2;
+import '../screens/auth/sign_up_screen.dart' as _i5;
 import '../screens/splash_screen.dart' as _i1;
 
 class AppRouter extends _i7.RootStackRouter {

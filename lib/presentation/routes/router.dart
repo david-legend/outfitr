@@ -1,9 +1,9 @@
 import 'package:auto_route/annotations.dart';
-import 'package:outfitr/presentation/screens/forgot_password_screen.dart';
-import 'package:outfitr/presentation/screens/get_started_screen.dart';
-import 'package:outfitr/presentation/screens/login_screen.dart';
-import 'package:outfitr/presentation/screens/onboarding_screen.dart';
-import 'package:outfitr/presentation/screens/sign_up_screen.dart';
+import 'package:outfitr/presentation/screens/auth/forgot_password_screen.dart';
+import 'package:outfitr/presentation/screens/onboarding/get_started_screen.dart';
+import 'package:outfitr/presentation/screens/auth/login_screen.dart';
+import 'package:outfitr/presentation/screens/onboarding/onboarding_screen.dart';
+import 'package:outfitr/presentation/screens/auth/sign_up_screen.dart';
 import 'package:outfitr/presentation/screens/splash_screen.dart';
 
 @MaterialAutoRouter(
